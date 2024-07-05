@@ -1,0 +1,232 @@
+body.homeClass{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    background-image: url(../images/stadium.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body.newsClass{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+body.standingsClass{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+body.fixturesClass{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+body.aboutClass{
+    margin: 0;
+    padding: 0;
+    background-color:black;
+}
+
+body.directionsClass{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+body.quizClass{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+nav{
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    background-color:black;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    border-right:solid;
+    border-color: cornflowerblue;
+}
+
+.navigation{
+    display: block;
+    color:white;
+    padding: 8px 16px;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.navigation.active{
+    background-color: slateblue;
+    color: white;
+}
+
+.navigation:hover:not(.active){
+    background-color: cornflowerblue;
+    color: white;
+}
+
+h1{
+    margin:0;
+    padding:0;
+    text-align: center;
+    font-family:sans-serif;
+    font-size: 60px;
+    color:white;
+    background-color:black;
+    border-style: hidden hidden solid hidden;
+    border-color:cornflowerblue;
+}
+
+p.homeClass{
+    background-color:black;
+    border-top: dashed;
+    border-bottom: dashed;
+    border-color: white;
+    padding: 40px;
+    margin: 10%;
+    margin-top: 15%;
+    width: 90%;
+    font-family: monospace;
+    font-size: 28px;
+    color: white;
+
+}
+
+h2{
+    margin-top: 2%;
+    text-align: center;
+    font-family: monospace;
+    font-size: 35px;
+}
+
+h2.aboutClass{
+    color: white;
+}
+
+p.headline{
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+}
+
+.newsImage{
+    width:50%;
+    margin-left:25%;
+}
+
+.aboutImage {
+	display: block;
+	margin: 0 auto;
+}
+
+p.article{
+    font-family: monospace;
+    font-size:14px;
+    width:50%;
+    margin-left:25%;
+}
+
+table.standings{
+    border:black;
+    margin-left: auto; 
+    margin-right: auto;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+td.standings{
+    border:solid;
+}
+
+th.standings{
+    border: solid;
+}
+
+table.fixtures{
+    margin-left: auto; 
+    margin-right: auto;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+}
+
+td.fixtures{
+    background-color:lightgray;
+}
+
+.aboutText{
+    width:86%;
+    margin-left: 12%;
+    font-family: monospace;
+    font-size: 15px;
+    color: white;
+}
+
+.address{
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+@media print {
+
+    nav {
+        display:none;
+    }
+
+    @page { margin: 0; }
+    body { margin: 1.6cm; }
+
+    p.homeClass{
+        margin-top: 10%;
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .address{
+        display: none;
+    }
+
+    .map{
+        margin-left: 5%;
+    }
+}
+
+div.quizClass{
+    margin-left:35%;
+    margin-bottom:5%;
+    font-size: 20px;
+    border-left: solid;
+    border-color: grey;
+}
+
+.map {
+    height: 400px;
+    width: 60%;
+    margin-top: 5%;
+    margin-left: 25%;
+  }
+
+  p.directionsClass{
+    margin-left: 25%;
+    font-size: x-large;
+    font-family: monospace;
+  }
+
+  p.quizClass{
+    margin-left: 35%;
+    font-size: x-large;
+    font-family: monospace;
+    border: dashed;
+    margin-right: 40%
+  }

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../styles/talktoonstyle.css">
+<script src="../scripts/quiz.js"></script>
+</head>
+<body class = "quizClass" onLoad="initialise();">
+    <h1>Talk Toon</h1>
+    <nav>
+        <a href = "../home.html" class = "navigation">HOME</a>
+        <br/>
+        <a href = "news.html" class = "navigation">NEWS</a>
+        <br/>
+        <a href = "fixtures.html" class = "navigation">FIXTURES</a>
+        <br/>
+        <a href = "standings.html" class = "navigation">STANDINGS</a>>
+        <br/>
+        <a href = "directions.html" class ="navigation">MAP</a>
+        <br/>
+        <a href = "quiz.html" class = "navigation">QUIZ</a>
+        <br/>
+        <a href = "about.html" class ="navigation">ABOUT</a>
+    </nav>
+
+    <h2>Quiz</h2>
+
+    <p class = "quizClass" id = "numAttempt">Number of Attempts: unknown</p>
+    <p class = "quizClass" id = "lastAttempt">Previous Attempt: unknown</p>
+
+    <div class = "quizClass">
+        <p><b>1. Who is Newcastle's all time leading goal scorer?</b></p>
+        <label>Peter Beardsley
+            <input type="radio" name="goals" id = "peter" value="wrong" />
+        </label>
+        <br>
+        <label>Alan Shearer
+            <input type="radio" name="goals" id = "shearer" value="correct"/>
+        </label>
+        <br>
+        <label>Joelinton
+            <input type="radio" name="goals" id = "joe" value="wrong"/>
+        </label>
+        <br>
+        <label>Shola Ameobi
+            <input type="radio" name="goals" id = "shola" value="wrong" />
+        </label>
+        <br>
+        <p><b>2. What is the name of Newcastle United's Stadium?</b></p>
+        <label>St James' Park
+            <input type="radio" name="stadium" id = "james" value="correct"/>
+        </label>
+        <br>
+        <label>Newcastle Stadium
+            <input type="radio" name="stadium" id = "new" value="wrong"/>
+        </label>
+        <br>
+        <label>Sports Direct Arena
+            <input type="radio" name="stadium" id = "sports" value="wrong"/>
+        </label>
+        <br>
+        <label>Upton Park
+            <input type="radio" name="stadium" id = "upton" value="wrong"/>
+        </label>
+        <br>
+        <p><b>3. Who scored the equaliser in Newcastle's 4-4 draw against Arsenal in 2011?</b></p>
+        <label>Joey Barton
+            <input type="radio" name="Tiote" id = "joey" value="wrong"/>
+        </label>
+        <br>
+        <label>Alan Shearer
+            <input type="radio" name="Tiote" id = "a.shearer" value="wrong"/>
+        </label>
+        <br>
+        <label>Allan Saint-Maximin
+            <input type="radio" name="Tiote" id = "goat" value="wrong"/>
+        </label>
+        <br>
+        <label>Cheick Tiote
+            <input type="radio" name="Tiote" id = "tiote" value="correct"/>
+        </label>
+        <br>
+        <p><b>4. Which Newcastle player has self described himself as Ronseal?</b></p>
+        <label>Sean Longstaff
+            <input type="radio" name="ronseal" id = "sean" value="wrong"/>
+        </label>
+        <br>
+        <label>David Ginola
+            <input type="radio" name="ronseal" id = "ginola" value="wrong"/>
+        </label>
+        <br>
+        <label>Mikel Merino
+            <input type="radio" name="ronseal" id = "merino" value="wrong"/>
+        </label>
+        <br>
+        <label>Paul Dummett
+            <input type="radio" name="ronseal" id = "dummett" value="correct"/>
+        </label>
+        <br>
+        <p><b>5. What is the name of the famous pub outside of the ground?</b></p>
+        <label>The Strawberry
+            <input type="radio" name="pub" id = "straw" value="correct"/>
+        </label>
+        <br>
+        <label>Black and White Arms
+            <input type="radio" name="pub" id = "bwarms" value="wrong"/>
+        </label>
+        <br>
+        <label>The Toon pub
+            <input type="radio" name="pub" id = "toon" value="wrong"/>
+        </label>
+        <br>
+        <label>Kings Arms
+            <input type="radio" name="pub" id = "karms" value="wrong"/>
+        </label>
+        <br>
+      <p><b>6. What is the capacity of Newcastle's stadium?</b></p>
+      <label>67,502
+          <input type="radio" name="capacity" id = "67" value="wrong"/>
+      </label>
+      <br>
+      <label>52,405
+          <input type="radio" name="capacity" id = "52" value="correct"/>
+      </label>
+      <br>
+      <label>39,070
+          <input type="radio" name="capacity" id = "39" value="wrong"/>
+      </label>
+      <br>
+      <label>55,234
+          <input type="radio" name="capacity" id = "55" value="wrong"/>
+      </label>
+      <br>
+      <p><b>7. When was NUFC founded?</b></p>
+      <label>1888
+          <input type="radio" name="founded" id = "88" value="wrong"/>
+      </label>
+      <br>
+      <label>1892
+          <input type="radio" name="founded" id = "92" value="correct"/>
+      </label>
+      <br>
+      <label>1901
+          <input type="radio" name="founded" id = "01" value="wrong"/>
+      </label>
+      <br>
+      <label>1885
+          <input type="radio" name="founded" id = "85" value="wrong"/>
+      </label>
+      <br>
+      <p><b>8. Which team knocked out Newcastle in the 2012/13 Europa League?</b></p>
+      <label>Arsenal
+          <input type="radio" name="europa" id = "arse" value="wrong"/>
+      </label>
+      <br>
+      <label>Marseille
+          <input type="radio" name="europa" id = "marse" value="wrong"/>
+      </label>
+      <br>
+      <label>Benfica
+          <input type="radio" name="europa" id = "benf" value="correct"/>
+      </label>
+      <br>
+      <label>Valencia
+          <input type="radio" name="europa" id = "vale" value="wrong"/>
+      </label>
+      <br>
+      <p><b>9. Who composed the song 'Going Home' that is performed before every Newcastle home game?</b></p>
+      <label>Hans Zimmer
+          <input type="radio" name="song" id = "hans" value="wrong"/>
+      </label>
+      <br>
+      <label>Johnny Greenwood
+          <input type="radio" name="song" id = "john" value="wrong"/>
+      </label>
+      <br>
+      <label>Brian Eno
+          <input type="radio" name="song" id = "eno" value="wrong"/>
+      </label>
+      <br>
+      <label>Mark Knopfler
+          <input type="radio" name="song" id = "mark" value="correct"/>
+      </label>
+      <br>
+      <p><b>10. Which club did Newcastle's current record signing come from?</b></p>
+      <label>Atlanta
+          <input type="radio" name="club" id = "atl" value="wrong"/>
+      </label>
+      <br>
+      <label>Real Madrid
+          <input type="radio" name="club" id = "real" value="wrong"/>
+      </label>
+      <br>
+      <label>Southampton
+          <input type="radio" name="club" id = "south" value="wrong"/>
+      </label>
+      <br>
+      <label>Hoffenheim
+          <input type="radio" name="club" id = "hoff" value="correct"/>
+      </label>
+      <br>
+      <br>
+      <button onclick="calculateScore()">Results</button>
+    </div>
+
+<body>
+<html>
